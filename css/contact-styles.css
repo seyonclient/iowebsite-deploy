@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    /* background-color: black; */
+}
+/* -------------------------------------- */
+/* -------------------------------------- */
+body{
+    background-color: black;
+}
+
+/* Header */
+.logo{
+    width: 10vw;
+    margin-right: auto;
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    /* position: fixed; */
+    /* width: 100vw; */
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+.nav_links li a{
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9vw;
+}
+
+.nav_links li a:hover{
+    color: #BFBFBF;
+}
+
+.line{
+    font-size: 200px;
+}
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    font-size: 0.9vw;
+}
+
+button:hover{
+    background-color: #BFBFBF;
+}
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* Contact Section */
+.contact-section{
+    height: 100vh;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+}
+
+.contact-info a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 52%;
+}
+
+.book-button{
+    margin-top: 30px;
+}
+
+.book-button h2 {
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    display: inline; 
+    padding: 5px 10px; 
+}
+
+
+.hoverable{
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.hoverable:hover{
+    color: red;
+}
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* Footer */
+.footer-icon-div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    letter-spacing: 50px;
+}
+
+.footer-icon-div i{
+    font-size: 2vw;
+    color: black;
+}
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* Reactive */
+@media screen and (max-width: 1100px){
+    /* Header */
+    .nav_links li{
+        font-size: 1.3vw;
+    }
+
+    .nav_links li a{
+        font-size: 1.3vw;
+    }
+
+    button{
+        font-size: 1.1vw;
+    }
+
+    /* Info Section */
+    .contact-map iframe{
+        width: 70vw;
+        margin-left: 20px;
+    }
+
+    .contact-info a{
+        font-size: 1.2vw;
+    }
+
+    .contact-info p{
+        font-size: 1.2vw;
+    }
+
+    .book-button h2 {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 780px){
+    /* Header */
+    .logo{
+        width: 13vw;
+    }
+
+    .nav_links li{
+        padding: 0px 10px;
+        font-size: 1.4vw;
+    }
+
+    button{
+        font-size: 1.4vw;
+    }
+
+    /* Contact Info */
+    .contact-items{
+        grid-template-columns: 1fr;
+    }   
+
+    .contact-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .contact-info a{
+        font-size: 1.7vw;
+    }
+
+    .contact-info p{
+        font-size: 1.7vw;
+    }
+
+    .contact-map iframe{
+        padding: 20px;
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .book-button h2 {
+        font-size: 3vw;
+    }
+
+    /* Footer */
+    .footer-icon-div{
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .footer-icon-div i{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 650px){
+    /* Header */
+    .logo{
+        width: 22vw;
+    }
+
+    button{
+        font-size: 1.9vw;
+    }
+}
+
+@media screen and (max-width: 480px){
+    /* Header */
+    .logo{
+        width: 30vw;
+    }
+
+    button{
+        font-size: 2.4vw;
+    }
+
+    .nav_links li{
+        display: none;
+    }
+
+    /* Contact Section */
+    .contact-info a{
+        font-size: 3vw;
+    }
+
+    .contact-info p{
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .book-button h2 {
+        font-size: 4.5vw;
+    }
+
+    .contact-map iframe{
+        width: 80vw;
+        height: 100vw;
+    }
+
+
+    /* Footer */
+    .footer-icon-div{
+        letter-spacing: 0px;
+    }
+
+    .footer-icon-div i{
+        padding: 10px;
+        font-size: 7vw;
+    }
+}
+
+
+
+
